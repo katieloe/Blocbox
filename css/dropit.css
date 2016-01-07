@@ -60,67 +60,15 @@
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
  }
- 
- 
- /*
- * Dropit v1.1.0
- * http://dev7studios.com/dropit
- *
- * Copyright 2012, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
 
-/* These styles assume you are using ul and li */
-.dropit2 {
-    list-style: none;
-	padding: 0;
- 	margin: 15px 0 0;
-    float:right;
-    display:inline-block;
+/* Bottom Style Menu */
 
+.menu--bottom.dropit .dropit-submenu {
+  bottom: 100%;
+  top: auto;
 }
-.dropit2 .dropit2-trigger { position: relative; }
-.dropit2 .dropit2-submenu {
-    position: absolute;
-    top: 100%;
-	right: 0; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 100px;
-    list-style: none;
-	padding: 20;
-	margin: 20px 0 0;
+.menu--bottom.dropit .dropit-open .dropit-submenu:after {
+  border-width: 8px 8px 0;
+  top: auto;
+  bottom: -8px;
 }
-.dropit2 .dropit2-open .dropit2-submenu { display: block; }
-.dropit2 .dropit2-open .dropit2-submenu {
-  display: block;
-   background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
-   border-radius: 4px;
-}
- .dropit2 .dropit2-open .dropit2-submenu:after {
-  content: " ";
-  position: absolute;
-  border-style: solid;
-  border-width: 0 8px 8px;
-  border-color: #FFFFFF transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  top: -8px;
-  right: 10px;
- }
- .dropit2 .dropit2-open .dropit2-submenu li {
-  display: block;
-  margin-bottom: 20px;
- }
- .dropit2 .dropit2-open .dropit2-submenu li:last-child {
-  margin-bottom: 0px;
- }
- .dropit2 .dropit2-open .dropit2-submenu li a {
-  color:#34495E;
-  text-decoration: none;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight:100;
- }
